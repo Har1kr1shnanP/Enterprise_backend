@@ -26,6 +26,7 @@ const updatePatient = async (req, res) => {
     // Return the updated patient
     res.json(patient);
   } catch (error) {
+    console.log("error")
     res.status(500).json({ error: error.message });
   }
 };
